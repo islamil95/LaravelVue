@@ -6,3 +6,42 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+.footer_politica{
+    text-align: right;
+}
+.footer_logo{
+    text-align: left;
+}
+.footer_logo,.footer_politica{
+    display: flex;
+    align-items: center;
+}
+@media(max-width: 767px){
+    .IndexLeftImg{
+        height: 350px;
+    }
+    .IndexMen{
+        margin-top: 20px;
+    }
+    .footer_logo,.footer_politica{
+        text-align: center;
+    }
+    .HeaderMenuUrlCenterBlock{
+        margin-bottom: 5px!important;
+    }
+    .HeaderMenuUrlCenter{
+        margin-top: 25px!important;
+    }
+}
+@media(max-width: 575px){
+    .HeaderLogo{
+        font-size: 160%;
+        text-align: center;
+        margin: 20px 0px!important;
+    }
+    .HeaderMenuButton{
+        font-size: 160%;
+        text-align: center;
+        margin: 10px 0px!important;
+    }
+}

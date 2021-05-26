@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/public/img/banner__img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/public/img/banner__img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/test/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +16,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/test/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -153,7 +146,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/server/OSPanel/domains/reestr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OSPanel/domains/reestr" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -188,19 +181,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -220,11 +201,16 @@
       <workItem from="1621964585745" duration="1196000" />
       <workItem from="1621973058987" duration="625000" />
       <workItem from="1622011934124" duration="8816000" />
+      <workItem from="1622045376230" duration="1506000" />
+      <workItem from="1622047218330" duration="1789000" />
+      <workItem from="1622049040628" duration="1376000" />
+      <workItem from="1622056252124" duration="1784000" />
+      <workItem from="1622058149250" duration="1097000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -264,5 +250,9 @@
     </state>
     <state x="-1253" y="253" width="627" height="568" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622021812797" />
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621964296491" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1622048596759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622048596759" />
   </component>
 </project>
