@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/get-json', [App\Http\Controllers\WelcomeController::class, 'getJson'])->name('getJson');
-
-Auth::routes();
+Route::get('/login', [App\Http\Controllers\Login::class, 'show'])->name('login');
+Route::post('/login', [App\Http\Controllers\Login::class, 'ValidatesRequests'])->name('login');
+Route::get('/register', [App\Http\Controllers\Registration::class, 'register'])->name('register');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
