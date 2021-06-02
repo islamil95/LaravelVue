@@ -25,12 +25,14 @@ class ValidateRequestRegistration extends FormRequest
     {
         return [
             'password'=>'min:14',
+            'password_confirmation'=>'min:15',
         ];
     }
     public function messages()
     {
         return [
             'password.min' => 'пупупупупу',
+            'password_confirmation.min' => 'feee',
         ];
     }
 }

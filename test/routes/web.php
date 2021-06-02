@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/get-json', [App\Http\Controllers\WelcomeController::class, 'getJson'])->name('getJson');
 Route::get('/login', [App\Http\Controllers\Login::class, 'show'])->name('login');
-Route::post('/login', [App\Http\Controllers\Login::class, 'ValidatesRequests'])->name('login');
-Route::get('/register', [App\Http\Controllers\Registration::class, 'register'])->name('register');
+Route::post('/login', [App\Http\Controllers\Login::class, 'ValidatesRequests'])->name('loginv');
+Route::get('/register', [App\Http\Controllers\Registration::class, 'show'])->name('register');
+Route::post('/register', [App\Http\Controllers\Registration::class, 'ValidateRequest'])->name('registerv');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/resources/views/layouts/IndexContent.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/Http/Requests/ValidateRequestRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Requests/ValidateRequestRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/test/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,7 +150,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OSPanel/domains/reestr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -181,7 +185,19 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -206,11 +222,12 @@
       <workItem from="1622049040628" duration="1376000" />
       <workItem from="1622056252124" duration="1784000" />
       <workItem from="1622058149250" duration="1097000" />
+      <workItem from="1622621730769" duration="5661000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -237,6 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621794838728" />
+    <state x="-1126" y="440" key="NewPhpFileDialog" timestamp="1622622701046">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1126" y="440" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622622701046" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1621973687928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
