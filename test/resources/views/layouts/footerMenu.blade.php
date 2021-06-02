@@ -1,4 +1,4 @@
-<div style="background: #333333;font-size: 130%;" class="p-4 text-white row m-0">
+<div style="background: #333333; " class="p-4 text-white row m-0">
     <div class="col-sm-4 col-12 footer_logo">
         <small class="w-100">Pedagogchr.ru</small>
     </div>

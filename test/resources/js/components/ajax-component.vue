@@ -21,6 +21,9 @@
                         {{url.url}}
                     </td>
                 </tr>
+                <tr >
+                     <input type="text" id="gop" placeholder="Введи данные" class="form-control">
+                </tr>
             </table>
         </div>
     </div>
@@ -32,7 +35,7 @@
             return{
                 urldata:[],
                 is_refresh:false,
-                id:0
+                id:0,
             }
         },
         mounted() {

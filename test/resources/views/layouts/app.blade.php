@@ -20,11 +20,17 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        @include('layouts/headerMenu')
-        <main class="py-4">
+    <div id="app" class="container m-0">
+        <ajax-component></ajax-component>
+        <header class="row m-0 w-100">
+            @yield('headerMenu')
+        </header>
+        <div class="row m-0 w-100">
             @yield('content')
-        </main>
+        </div>
+        <footer class="row m-0 w-100">
+            @yield('footer')
+        </footer>
     </div>
 </body>
 </html>
