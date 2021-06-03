@@ -24,17 +24,9 @@ class WelcomeController extends Controller
         ]);
     }
 
-    public function getJson()
+    public function getJson(Request $request)
     {
-        return[
-            array(
-                'title'=>'Ееееее)',
-                'url'=>'Ibragimov',
-            ),
-            array(
-                'title'=>'Цхьац дол хумнаш))',
-                'url'=>'Magomedovich',
-            )
-        ];
+        var_dump('121212',$request->all());
+
     }
 }

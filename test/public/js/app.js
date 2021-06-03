@@ -1967,22 +1967,25 @@ __webpack_require__.r(__webpack_exports__);
     return {
       urldata: [],
       is_refresh: false,
-      id: 0
+      id: 0,
+      gop: ""
     };
-  },
-  mounted: function mounted() {
-    this.update();
   },
   methods: {
     update: function update() {
-      var _this = this;
+      this.is_refresh = true; // axios.get('/get-json').then((response)=>{
+      //     console.log(response);
+      //     this.urldata=response.data;
+      //     this.is_refresh=false;
+      //     this.id++;
+      // });
 
-      this.is_refresh = true;
-      axios.get('/get-json').then(function (response) {
-        console.log(response);
-        _this.urldata = response.data;
-        _this.is_refresh = false;
-        _this.id++;
+      axios.get('/get-json', this.gop, {
+        headers: {
+          "Content-type": "application/json"
+        }
+      }).then(function (res) {
+        console.log(res);
       });
     }
   }
@@ -37848,7 +37851,29 @@ var render = function() {
             ])
           }),
           _vm._v(" "),
-          _vm._m(1)
+          _c("tr", [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.gop,
+                  expression: "gop"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Введи данные" },
+              domProps: { value: _vm.gop },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.gop = $event.target.value
+                }
+              }
+            })
+          ])
         ],
         2
       )
@@ -37864,17 +37889,6 @@ var staticRenderFns = [
       _c("th", [_vm._v("\n                    Имя\n                ")]),
       _vm._v(" "),
       _c("th", [_vm._v("\n                    Фамилия\n                ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c("input", {
-        staticClass: "form-control",
-        attrs: { type: "text", id: "gop", placeholder: "Введи данные" }
-      })
     ])
   }
 ]

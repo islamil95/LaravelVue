@@ -22,7 +22,7 @@
                     </td>
                 </tr>
                 <tr >
-                     <input type="text" id="gop" placeholder="Введи данные" class="form-control">
+                     <input type="text" v-model="gop" placeholder="Введи данные" class="form-control">
                 </tr>
             </table>
         </div>
@@ -36,20 +36,25 @@
                 urldata:[],
                 is_refresh:false,
                 id:0,
+                gop:"",
             }
-        },
-        mounted() {
-             this.update()
         },
         methods:{
             update:function (){
                  this.is_refresh=true;
-                 axios.get('/get-json').then((response)=>{
-                     console.log(response);
-                     this.urldata=response.data;
-                     this.is_refresh=false;
-                     this.id++;
-                 });
+                 // axios.get('/get-json').then((response)=>{
+                 //     console.log(response);
+                 //     this.urldata=response.data;
+                 //     this.is_refresh=false;
+                 //     this.id++;
+                 // });
+                axios.get('/get-json', this.gop, {
+                    headers: {
+                        "Content-type": "application/json"
+                    }
+                }).then(res => {
+                    console.log(res);
+                });
             }
         }
     }
