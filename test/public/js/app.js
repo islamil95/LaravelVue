@@ -1998,6 +1998,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2010,6 +2019,7 @@ __webpack_require__.r(__webpack_exports__);
         old_password: ""
       },
       errors: [],
+      errorsServer: [],
       errorClass: 'border-danger',
       errorStatus: false
     };
@@ -2017,6 +2027,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     Filter: function Filter() {
       this.errors = [];
+      this.errorsServer = [];
 
       if (!this.form.name) {
         this.errors.push('Требуется указать имя');
@@ -2028,6 +2039,26 @@ __webpack_require__.r(__webpack_exports__);
 
       if (!this.form.secondname) {
         this.errors.push('Требуется указать отчество');
+      }
+
+      if (!this.form.email) {
+        this.errors.push('Требуется указать E-mail');
+      }
+
+      if (!this.form.password) {
+        this.errors.push('Требуется указать пароль');
+      } else {
+        if (this.form.password.length < 5 || this.form.password.length > 10) {
+          this.errors.push('Пароль недолжен быть короче 5 и больше 10 символов');
+        }
+      }
+
+      if (!this.form.old_password) {
+        this.errors.push('Требуется указать повторный пароль');
+      }
+
+      if (this.form.password != this.form.old_password && this.form.password && this.form.old_password) {
+        this.errors.push('Пароли не совпадают');
       }
 
       this.MetFilter(); // axios.post('/get-json',{Username:this.gop},  {
@@ -2049,17 +2080,30 @@ __webpack_require__.r(__webpack_exports__);
       // });
     },
     MetFilter: function MetFilter() {
-      if (this.error) {
-        return error;
+      if (this.errors.length) {
+        return this.errors;
       } else {
         this.CreateRequest();
       }
     },
     CreateRequest: function CreateRequest() {
-      axios.post('/get-json', {
+      var _this = this;
+
+      axios.post('/register', {
         form: this.form
       }).then(function (response) {
         console.log(response);
+      })["catch"](function (e) {
+        console.log(e);
+
+        if (e.response.status == 422) {
+          // this.errors.push(e.response.data.errors);
+          _this.errorsServer.push(e.response.data.errors);
+        } else {
+          console.log(e);
+
+          _this.errors.push("Неизвестная ошибка. Обратитесь к администратору");
+        }
       });
     }
   }
@@ -37948,9 +37992,10 @@ var render = function() {
                     directives: [
                       {
                         name: "model",
-                        rawName: "v-model",
+                        rawName: "v-model.trim",
                         value: _vm.form.name,
-                        expression: "form.name"
+                        expression: "form.name",
+                        modifiers: { trim: true }
                       }
                     ],
                     staticClass: "form-control",
@@ -37961,7 +38006,10 @@ var render = function() {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.$set(_vm.form, "name", $event.target.value)
+                        _vm.$set(_vm.form, "name", $event.target.value.trim())
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
                       }
                     }
                   })
@@ -37983,9 +38031,10 @@ var render = function() {
                     directives: [
                       {
                         name: "model",
-                        rawName: "v-model",
+                        rawName: "v-model.trim",
                         value: _vm.form.secondname,
-                        expression: "form.secondname"
+                        expression: "form.secondname",
+                        modifiers: { trim: true }
                       }
                     ],
                     staticClass: "form-control",
@@ -37996,7 +38045,14 @@ var render = function() {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.$set(_vm.form, "secondname", $event.target.value)
+                        _vm.$set(
+                          _vm.form,
+                          "secondname",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
                       }
                     }
                   })
@@ -38018,9 +38074,10 @@ var render = function() {
                     directives: [
                       {
                         name: "model",
-                        rawName: "v-model",
+                        rawName: "v-model.trim",
                         value: _vm.form.email,
-                        expression: "form.email"
+                        expression: "form.email",
+                        modifiers: { trim: true }
                       }
                     ],
                     staticClass: "form-control",
@@ -38028,8 +38085,7 @@ var render = function() {
                       id: "email",
                       type: "email",
                       name: "email",
-                      required: "",
-                      autocomplete: "email"
+                      required: ""
                     },
                     domProps: { value: _vm.form.email },
                     on: {
@@ -38037,7 +38093,10 @@ var render = function() {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.$set(_vm.form, "email", $event.target.value)
+                        _vm.$set(_vm.form, "email", $event.target.value.trim())
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
                       }
                     }
                   })
@@ -38059,9 +38118,10 @@ var render = function() {
                     directives: [
                       {
                         name: "model",
-                        rawName: "v-model",
+                        rawName: "v-model.trim",
                         value: _vm.form.password,
-                        expression: "form.password"
+                        expression: "form.password",
+                        modifiers: { trim: true }
                       }
                     ],
                     staticClass: "form-control  ",
@@ -38069,8 +38129,7 @@ var render = function() {
                       id: "password",
                       type: "password",
                       name: "password",
-                      required: "",
-                      autocomplete: "new-password"
+                      required: ""
                     },
                     domProps: { value: _vm.form.password },
                     on: {
@@ -38078,7 +38137,14 @@ var render = function() {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.$set(_vm.form, "password", $event.target.value)
+                        _vm.$set(
+                          _vm.form,
+                          "password",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
                       }
                     }
                   })
@@ -38100,9 +38166,10 @@ var render = function() {
                     directives: [
                       {
                         name: "model",
-                        rawName: "v-model",
+                        rawName: "v-model.trim",
                         value: _vm.form.old_password,
-                        expression: "form.old_password"
+                        expression: "form.old_password",
+                        modifiers: { trim: true }
                       }
                     ],
                     staticClass: "form-control",
@@ -38110,8 +38177,7 @@ var render = function() {
                       id: "password-confirm",
                       type: "password",
                       name: "password_confirmation",
-                      required: "",
-                      autocomplete: "new-password"
+                      required: ""
                     },
                     domProps: { value: _vm.form.old_password },
                     on: {
@@ -38119,7 +38185,14 @@ var render = function() {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.$set(_vm.form, "old_password", $event.target.value)
+                        _vm.$set(
+                          _vm.form,
+                          "old_password",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
                       }
                     }
                   })
@@ -38133,7 +38206,24 @@ var render = function() {
                     {
                       staticClass: "btn btn-primary",
                       attrs: { type: "button" },
-                      on: { click: _vm.Filter }
+                      on: {
+                        click: _vm.Filter,
+                        keydown: function($event) {
+                          if (
+                            !$event.type.indexOf("key") &&
+                            _vm._k(
+                              $event.keyCode,
+                              "enter",
+                              13,
+                              $event.key,
+                              "Enter"
+                            )
+                          ) {
+                            return null
+                          }
+                          return _vm.Filter($event)
+                        }
+                      }
                     },
                     [_vm._v("Регистрация")]
                   )
@@ -38141,7 +38231,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _vm.errors.length
-                ? _c("p", [
+                ? _c("div", { staticClass: "alert-danger mt-3 rounded p-2" }, [
                     _c("b", [_vm._v("Пожалуйста исправьте указанные ошибки:")]),
                     _vm._v(" "),
                     _c(
@@ -38152,6 +38242,29 @@ var render = function() {
                       0
                     )
                   ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.errorsServer.length
+                ? _c(
+                    "div",
+                    { staticClass: "alert-danger mt-3 rounded p-2" },
+                    [
+                      _c("b", [
+                        _vm._v("Пожалуйста исправьте указанные ошибки:")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.errorsServer, function(error) {
+                        return _c(
+                          "div",
+                          _vm._l(error, function(errorLocal) {
+                            return _c("div", [_vm._v(_vm._s(errorLocal))])
+                          }),
+                          0
+                        )
+                      })
+                    ],
+                    2
+                  )
                 : _vm._e()
             ])
           ])

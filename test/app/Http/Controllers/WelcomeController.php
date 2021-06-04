@@ -24,14 +24,5 @@ class WelcomeController extends Controller
         ]);
     }
 
-    public function getJson(Request $request)
-    {
-        var_dump('121212',$request->all());
 
-    }
-    public function getJsonPost(Request $request)
-    {
-        return $request->all();
-
-    }
 }

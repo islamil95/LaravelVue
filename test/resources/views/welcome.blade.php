@@ -15,7 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div id="app">
+<div id="app"   >
     @include('layouts/headerMenu')
     @include('layouts/IndexContent')
     @include('layouts/footerMenu')

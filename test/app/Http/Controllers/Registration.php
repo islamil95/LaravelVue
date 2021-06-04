@@ -14,7 +14,6 @@ class Registration extends Controller
 
     public function ValidateRequest(ValidateRequestRegistration $request)
     {
-        var_dump('121212');
         $this->show();
     }
 }

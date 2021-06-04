@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
     <div class="row w-100 m-0 p-0">
         <a class="navbar-brand p-0 col-12 m-0 col-sm-10 col-md-4 HeaderLogo" href="{{ url('/') }}">
 {{--            <div class="row m-0">{{ config('app.name') }}</div>--}}

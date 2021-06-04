@@ -24,15 +24,26 @@ class ValidateRequestRegistration extends FormRequest
     public function rules()
     {
         return [
-            'password'=>'min:14',
-            'password_confirmation'=>'min:15',
+            'form.password'=>'min:5|max:10',
+            'form.old_password'=>'same:form.password',
+            'form.email'=>'email',
+            'form.surname'=>'min:2|max:50',
+            'form.name'=>'min:2|max:50',
+            'form.secondname'=>'min:2|max:50',
         ];
     }
     public function messages()
     {
         return [
-            'password.min' => 'пупупупупу',
-            'password_confirmation.min' => 'feee',
+            'form.surname.min' => 'Пароль должен быть от 2  символов',
+            'form.name.min' => 'Пароль должен быть от 2  символов',
+            'form.secondname.min' => 'Пароль должен быть от 2 символов',
+            'form.surname.max' => 'Пароль должен быть  до 50 символов',
+            'form.name.max' => 'Пароль должен быть до 50 символов',
+            'form.secondname.max' => 'Пароль должен быть   до 50 символов',
+            'form.email.email' => 'E-mail некорректный',
+            'form.password' => 'Пароль должен быть от 5 и до 10 символов',
+            'form.old_password.same' => 'Пароли не совпадают',
         ];
     }
 }

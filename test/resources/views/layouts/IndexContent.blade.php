@@ -11,7 +11,7 @@
 
 <div class="row mx-0 mt-4  " style="background: #f3f3f3;">
     <div class="col-12 col-md-6 IndexLeftImg" style="background: url('img/platform__img.jpg'); background-size: cover;">⠀</div>
-    <div class="col-12 col-md-6 py-5">
+    <div class="col-12 col-md-6 " style="    padding: 5rem 3rem!important;">
         <h2 class="font-weight-bold" style='font-family: "Montserrat", Arial, sans-serif;'>
             Описание платформы
         </h2>
