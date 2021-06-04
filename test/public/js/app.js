@@ -1920,76 +1920,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      urldata: [],
-      is_refresh: false,
-      id: 0,
-      gop: ""
-    };
-  },
-  methods: {
-    update: function update() {
-      this.is_refresh = true; // axios.get('/get-json').then((response)=>{
-      //     console.log(response);
-      //     this.urldata=response.data;
-      //     this.is_refresh=false;
-      //     this.id++;
-      // });
-
-      axios.get('/get-json', this.gop, {
-        headers: {
-          "Content-type": "application/json"
-        }
-      }).then(function (res) {
-        console.log(res);
-      });
-    }
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\resources\\js\\components\\registr.vue: Unexpected token (42:12)\n\n\u001b[0m \u001b[90m 40 |\u001b[39m             form\u001b[33m:\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m                 \u001b[32m\"\"\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m             }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     methods\u001b[33m:\u001b[39m{\u001b[0m\n    at Parser._raise (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:810:17)\n    at Parser.raiseWithData (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:803:17)\n    at Parser.raise (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:764:17)\n    at Parser.unexpected (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:9967:16)\n    at Parser.parseObjPropValue (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11925:21)\n    at Parser.parsePropertyDefinition (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11848:10)\n    at Parser.parseObjectLike (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11738:25)\n    at Parser.parseExprAtom (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11289:23)\n    at Parser.parseExprSubscripts (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10941:23)\n    at Parser.parseUpdate (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10921:21)\n    at Parser.parseMaybeUnary (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10899:23)\n    at Parser.parseExprOps (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10756:23)\n    at Parser.parseMaybeConditional (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10730:23)\n    at Parser.parseMaybeAssign (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10693:21)\n    at C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10660:39\n    at Parser.allowInAnd (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:12356:12)");
 
 /***/ }),
 
@@ -2019,7 +1956,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue").default);
 Vue.component('prop-component', __webpack_require__(/*! ./components/PropComponent.vue */ "./resources/js/components/PropComponent.vue").default);
-Vue.component('ajax-component', __webpack_require__(/*! ./components/ajax-component.vue */ "./resources/js/components/ajax-component.vue").default);
+Vue.component('registr', __webpack_require__(/*! ./components/registr.vue */ "./resources/js/components/registr.vue").default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -37537,10 +37474,10 @@ component.options.__file = "resources/js/components/PropComponent.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/ajax-component.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/components/ajax-component.vue ***!
-  \****************************************************/
+/***/ "./resources/js/components/registr.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/registr.vue ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37548,8 +37485,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ajax-component.vue?vue&type=template&id=4b4af09b& */ "./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b&");
-/* harmony import */ var _ajax_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ajax-component.vue?vue&type=script&lang=js& */ "./resources/js/components/ajax-component.vue?vue&type=script&lang=js&");
+/* harmony import */ var _registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registr.vue?vue&type=template&id=14d3e97e& */ "./resources/js/components/registr.vue?vue&type=template&id=14d3e97e&");
+/* harmony import */ var _registr_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./registr.vue?vue&type=script&lang=js& */ "./resources/js/components/registr.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -37559,9 +37496,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _ajax_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__.render,
-  _ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _registr_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -37571,7 +37508,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/ajax-component.vue"
+component.options.__file = "resources/js/components/registr.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -37608,10 +37545,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/ajax-component.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/ajax-component.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/***/ "./resources/js/components/registr.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/registr.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37619,8 +37556,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ajax_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ajax-component.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ajax_component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_registr_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./registr.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_registr_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -37658,19 +37595,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/registr.vue?vue&type=template&id=14d3e97e&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/registr.vue?vue&type=template&id=14d3e97e& ***!
+  \****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ajax_component_vue_vue_type_template_id_4b4af09b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ajax-component.vue?vue&type=template&id=4b4af09b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_registr_vue_vue_type_template_id_14d3e97e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./registr.vue?vue&type=template&id=14d3e97e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=template&id=14d3e97e&");
 
 
 /***/ }),
@@ -37790,10 +37727,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ajax-component.vue?vue&type=template&id=4b4af09b& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=template&id=14d3e97e&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=template&id=14d3e97e& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37852,6 +37789,28 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("tr", [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.gop,
+                  expression: "gop"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Введи данные" },
+              domProps: { value: _vm.gop },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.gop = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
             _c("input", {
               directives: [
                 {

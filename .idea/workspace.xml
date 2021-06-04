@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/resources/js/components/registr.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/js/components/ajax-component.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/components/ajax-component.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/js/components/ajax-component.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -218,7 +230,7 @@
       <workItem from="1622049040628" duration="1376000" />
       <workItem from="1622056252124" duration="1784000" />
       <workItem from="1622058149250" duration="1097000" />
-      <workItem from="1622621730769" duration="21900000" />
+      <workItem from="1622621730769" duration="25260000" />
     </task>
     <task id="LOCAL-00001" summary="До того, как начал использовать компоненты vue">
       <created>1622632047356</created>
@@ -234,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622652783020</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Пытаюсь передать данные из формы на бэкенд">
+      <created>1622741718577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622741718577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,13 +264,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="До того, как начал использовать компоненты vue" />
     <MESSAGE value="Начал использовать компонент vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начал использовать компонент vue" />
+    <MESSAGE value="Пытаюсь передать данные из формы на бэкенд" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пытаюсь передать данные из формы на бэкенд" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1622652780499">
+    <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622790123934">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622652780499" />
+    <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622790123934" />
+    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1622741716076">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622741716076" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1622030044387">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -281,15 +305,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621973687928" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622652785679">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622741720730">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622652785679" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622741720730" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621973505262" />
-    <state x="-1253" y="253" width="627" height="568" key="find.popup" timestamp="1622710361501">
+    <state x="-1253" y="253" width="627" height="568" key="find.popup" timestamp="1622790449865">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1253" y="253" width="627" height="568" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622710361501" />
+    <state x="-1253" y="253" width="627" height="568" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622790449865" />
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621964296491" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1622048596759">
       <screen x="0" y="0" width="1920" height="1040" />

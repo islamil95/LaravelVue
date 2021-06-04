@@ -21,7 +21,6 @@
 </head>
 <body>
     <div id="app" class="container m-0">
-        <ajax-component></ajax-component>
         <header class="row m-0 w-100">
             @yield('headerMenu')
         </header>
