@@ -1924,9 +1924,146 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/registr.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************************************************************************************************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\resources\\js\\components\\registr.vue: Unexpected token (42:12)\n\n\u001b[0m \u001b[90m 40 |\u001b[39m             form\u001b[33m:\u001b[39m{\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m                 \u001b[32m\"\"\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m             }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m         }\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     methods\u001b[33m:\u001b[39m{\u001b[0m\n    at Parser._raise (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:810:17)\n    at Parser.raiseWithData (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:803:17)\n    at Parser.raise (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:764:17)\n    at Parser.unexpected (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:9967:16)\n    at Parser.parseObjPropValue (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11925:21)\n    at Parser.parsePropertyDefinition (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11848:10)\n    at Parser.parseObjectLike (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11738:25)\n    at Parser.parseExprAtom (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:11289:23)\n    at Parser.parseExprSubscripts (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10941:23)\n    at Parser.parseUpdate (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10921:21)\n    at Parser.parseMaybeUnary (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10899:23)\n    at Parser.parseExprOps (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10756:23)\n    at Parser.parseMaybeConditional (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10730:23)\n    at Parser.parseMaybeAssign (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10693:21)\n    at C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:10660:39\n    at Parser.allowInAnd (C:\\Users\\islam\\PhpstormProjects\\LaravelVue\\test\\node_modules\\@babel\\parser\\lib\\index.js:12356:12)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      form: {
+        surname: "",
+        name: "",
+        secondname: "",
+        email: "",
+        password: "",
+        old_password: ""
+      },
+      errors: [],
+      errorClass: 'border-danger',
+      errorStatus: false
+    };
+  },
+  methods: {
+    Filter: function Filter() {
+      this.errors = [];
+
+      if (!this.form.name) {
+        this.errors.push('Требуется указать имя');
+      }
+
+      if (!this.form.surname) {
+        this.errors.push('Требуется указать фамилию');
+      }
+
+      if (!this.form.secondname) {
+        this.errors.push('Требуется указать отчество');
+      }
+
+      this.MetFilter(); // axios.post('/get-json',{Username:this.gop},  {
+      //     headers: {
+      //         "Content-type": "application/json"
+      //     }
+      // }).then(res => {
+      //     console.log(res);
+      // });
+      // axios.get('/get-json',  {
+      //     headers: {
+      //         "Content-type": "application/json"
+      //     },
+      //     params:{
+      //         UserName: this.gop ,
+      //     },
+      // }).then(res => {
+      //     console.log(res);
+      // });
+    },
+    MetFilter: function MetFilter() {
+      if (this.error) {
+        return error;
+      } else {
+        this.CreateRequest();
+      }
+    },
+    CreateRequest: function CreateRequest() {
+      axios.post('/get-json', {
+        form: this.form
+      }).then(function (response) {
+        console.log(response);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -37743,99 +37880,283 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
-      !_vm.is_refresh
-        ? _c(
-            "button",
-            {
-              staticClass: "btn btn-defoult text bm-1",
-              on: { click: _vm.update }
-            },
-            [_vm._v("Обновить - " + _vm._s(_vm.id) + " ...")]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.is_refresh
-        ? _c("span", { staticClass: "badge badge-primary mb-1" }, [
-            _vm._v("Обновление")
-          ])
-        : _vm._e(),
-      _vm._v(" "),
-      _c(
-        "table",
-        { staticClass: "table" },
-        [
-          _vm._m(0),
+  return _c("div", { staticClass: "container mt-3" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [_vm._v("Регистрация")]),
           _vm._v(" "),
-          _vm._l(_vm.urldata, function(url) {
-            return _c("tr", [
-              _c("td", [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(url.title) +
-                    "\n                "
-                )
+          _c("div", { staticClass: "card-body" }, [
+            _c("form", [
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "surname" }
+                  },
+                  [_vm._v("Фамилия")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model.trim",
+                        value: _vm.form.surname,
+                        expression: "form.surname",
+                        modifiers: { trim: true }
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { id: "surname", type: "text", autofocus: "" },
+                    domProps: { value: _vm.form.surname },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.form,
+                          "surname",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
+                      }
+                    }
+                  })
+                ])
               ]),
               _vm._v(" "),
-              _c("td", [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(url.url) +
-                    "\n                "
-                )
-              ])
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "name" }
+                  },
+                  [_vm._v("Имя")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.name,
+                        expression: "form.name"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { id: "name", type: "text" },
+                    domProps: { value: _vm.form.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "name", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "secondname" }
+                  },
+                  [_vm._v("Отчество")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.secondname,
+                        expression: "form.secondname"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { id: "secondname", type: "text" },
+                    domProps: { value: _vm.form.secondname },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "secondname", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "email" }
+                  },
+                  [_vm._v("E-mail")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.email,
+                        expression: "form.email"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      id: "email",
+                      type: "email",
+                      name: "email",
+                      required: "",
+                      autocomplete: "email"
+                    },
+                    domProps: { value: _vm.form.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "email", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "password" }
+                  },
+                  [_vm._v("Пароль")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.password,
+                        expression: "form.password"
+                      }
+                    ],
+                    staticClass: "form-control  ",
+                    attrs: {
+                      id: "password",
+                      type: "password",
+                      name: "password",
+                      required: "",
+                      autocomplete: "new-password"
+                    },
+                    domProps: { value: _vm.form.password },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "password", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-md-4 col-form-label text-md-right",
+                    attrs: { for: "password-confirm" }
+                  },
+                  [_vm._v("Повторите пароль")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.old_password,
+                        expression: "form.old_password"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      id: "password-confirm",
+                      type: "password",
+                      name: "password_confirmation",
+                      required: "",
+                      autocomplete: "new-password"
+                    },
+                    domProps: { value: _vm.form.old_password },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "old_password", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row mb-0" }, [
+                _c("div", { staticClass: "col-md-6 offset-md-4" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.Filter }
+                    },
+                    [_vm._v("Регистрация")]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _vm.errors.length
+                ? _c("p", [
+                    _c("b", [_vm._v("Пожалуйста исправьте указанные ошибки:")]),
+                    _vm._v(" "),
+                    _c(
+                      "ul",
+                      _vm._l(_vm.errors, function(error) {
+                        return _c("li", [_vm._v(_vm._s(error))])
+                      }),
+                      0
+                    )
+                  ])
+                : _vm._e()
             ])
-          }),
-          _vm._v(" "),
-          _c("tr", [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.gop,
-                  expression: "gop"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Введи данные" },
-              domProps: { value: _vm.gop },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.gop = $event.target.value
-                }
-              }
-            }),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.gop,
-                  expression: "gop"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Введи данные" },
-              domProps: { value: _vm.gop },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.gop = $event.target.value
-                }
-              }
-            })
           ])
-        ],
-        2
-      )
+        ])
+      ])
     ])
   ])
 }
@@ -37844,11 +38165,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c("th", [_vm._v("\n                    Имя\n                ")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("\n                    Фамилия\n                ")])
-    ])
+    return _c(
+      "span",
+      { staticClass: "invalid-feedback", attrs: { role: "alert" } },
+      [_c("strong", [_vm._v("scsc")])]
+    )
   }
 ]
 render._withStripped = true

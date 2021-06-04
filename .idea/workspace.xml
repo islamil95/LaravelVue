@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/resources/js/components/registr.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/js/components/ajax-component.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/js/components/registr.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/components/registr.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +224,7 @@
       <workItem from="1622049040628" duration="1376000" />
       <workItem from="1622056252124" duration="1784000" />
       <workItem from="1622058149250" duration="1097000" />
-      <workItem from="1622621730769" duration="25260000" />
+      <workItem from="1622621730769" duration="37813000" />
     </task>
     <task id="LOCAL-00001" summary="До того, как начал использовать компоненты vue">
       <created>1622632047356</created>
@@ -253,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622741718577</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Пытаюсь передать данные из формы на бэкенд v.1">
+      <created>1622794124779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622794124779</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,17 +266,18 @@
     <MESSAGE value="До того, как начал использовать компоненты vue" />
     <MESSAGE value="Начал использовать компонент vue" />
     <MESSAGE value="Пытаюсь передать данные из формы на бэкенд" />
-    <option name="LAST_COMMIT_MESSAGE" value="Пытаюсь передать данные из формы на бэкенд" />
+    <MESSAGE value="Пытаюсь передать данные из формы на бэкенд v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пытаюсь передать данные из формы на бэкенд v.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622790123934">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622790123934" />
-    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1622741716076">
+    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1622794122193">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622741716076" />
+    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622794122193" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1622030044387">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -305,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621973687928" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622741720730">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622794125956">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622741720730" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622794125956" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621973505262" />
     <state x="-1253" y="253" width="627" height="568" key="find.popup" timestamp="1622790449865">
       <screen x="-1920" y="0" width="1920" height="1040" />
