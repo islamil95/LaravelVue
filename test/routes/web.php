@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/login', [App\Http\Controllers\Login::class, 'show'])->name('login');
+Route::post('/logout', [App\Http\Controllers\LogoutController::class, 'show'])->name('logout');
 Route::post('/login', [App\Http\Controllers\Login::class, 'ValidatesRequests'])->name('loginv');
 Route::get('/register', [App\Http\Controllers\Registration::class, 'show'])->name('register');
 Route::post('/register', [App\Http\Controllers\Registration::class, 'ValidateRequest'])->name('registerv');

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/app/Http/Controllers/LogoutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/WelcomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/Http/Requests/ValidateRequestRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Requests/ValidateRequestRegistration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/js/components/registr.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/components/registr.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/IndexContent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/IndexContent.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/footerMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/footerMenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/web.php" afterDir="false" />
@@ -23,7 +20,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/test/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,7 +194,19 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -314,14 +325,15 @@
     </state>
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622794125956" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621973505262" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1622832358358">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1253" y="253" width="627" height="568" key="find.popup" timestamp="1623057498760">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1253" y="253" width="627" height="568" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622790449865" />
+    <state x="-1253" y="253" width="627" height="568" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623057498760" />
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622832358358" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1622048596759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1623056953195">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623056953195" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622048596759" />
   </component>
 </project>
