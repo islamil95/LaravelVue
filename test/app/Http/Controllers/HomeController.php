@@ -23,8 +23,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        return view('home');
+        $url_data=[
+             'PersoneData'=>[
+                 'Surname'=>'Ibragimov',
+                 'Name'=>'Islam',
+                 'Secondname'=>'Магомедович',
+             ],
+        ];
+        return view('home',[
+            'ContentDom'=>$url_data
+        ]);
     }
 
 }

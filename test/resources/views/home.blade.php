@@ -1,23 +1,41 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
+    @extends('layouts.headerMenu')
+    <div class="container">
+        <div class="row my-3">
+            <b>Добро
+                пожаловать @if(!empty($ContentDom)) @foreach ($ContentDom as $val) {{$val['Name']." ".$val['Secondname']}} @endforeach  @endif </b>
+        </div>
+        <form  method="POST" class="w-100">
+        <div class="row" >
+            <div class="col-12 col-md-4">
+                <label for="surname">Фамилия:</label>
+                <input id="surname" name="surname" class="form-control" value="{{$ContentDom["PersoneData"]["Surname"]}}">
+            </div>
+            <div class="col-12 col-md-4">
+                <label for="name">Имя:</label>
+                <input id="name" name="name" class="form-control"  value="{{$ContentDom["PersoneData"]["Name"]}}">
+            </div>
+            <div class="col-12 col-md-4">
+            <label for="secondname">Отчество:</label>
+            <input id="secondname" name="secondname" class="form-control"  value="{{$ContentDom["PersoneData"]["Secondname"]}}">
             </div>
         </div>
+            <div class="row" >
+            <div class="col-12 col-md-4">
+                <label for="surname">Фамилия:</label>
+                <input id="surname" name="surname" class="form-control" value="{{$ContentDom["PersoneData"]["Surname"]}}">
+            </div>
+            <div class="col-12 col-md-4">
+                <label for="name">Имя:</label>
+                <input id="name" name="name" class="form-control"  value="{{$ContentDom["PersoneData"]["Name"]}}">
+            </div>
+            <div class="col-12 col-md-4">
+            <label for="secondname">Отчество:</label>
+            <input id="secondname" name="secondname" class="form-control"  value="{{$ContentDom["PersoneData"]["Secondname"]}}">
+            </div>
+        </div>
+        </form>
     </div>
-</div>
 @endsection

@@ -149,6 +149,7 @@
             CreateRequest(){
                 axios.post('/register',{form:this.form}).then((response)=>{
                     console.log(response);
+                    location.href='/home';
                 }).catch((e) => {
                     console.log(e);
                     if(e.response.status==422){

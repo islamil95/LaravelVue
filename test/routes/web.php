@@ -20,3 +20,4 @@ Route::post('/login', [App\Http\Controllers\Login::class, 'ValidatesRequests'])-
 Route::get('/register', [App\Http\Controllers\Registration::class, 'show'])->name('register');
 Route::post('/register', [App\Http\Controllers\Registration::class, 'ValidateRequest'])->name('registerv');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/PersoneData', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

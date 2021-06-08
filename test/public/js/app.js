@@ -2093,6 +2093,7 @@ __webpack_require__.r(__webpack_exports__);
         form: this.form
       }).then(function (response) {
         console.log(response);
+        location.href = '/home';
       })["catch"](function (e) {
         console.log(e);
 
