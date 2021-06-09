@@ -36,8 +36,11 @@ class Registration extends Controller
     }
     public function create(array $data)
     {
+
         $user= User::create([
+            'surname' => $data['surname'],
             'name' => $data['name'],
+            'secondname' => $data['secondname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password'])
         ]);

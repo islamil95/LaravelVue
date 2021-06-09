@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,11 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $users = User::all();
         $url_data=[
              'PersoneData'=>[
-                 'Surname'=>'Ibragimov',
-                 'Name'=>'Islam',
-                 'Secondname'=>'Магомедович',
+                 'Surname'=>Auth::user()->surname,
+                 'Name'=>Auth::user()->name,
+                 'Secondname'=>Auth::user()->secondname,
              ],
         ];
         return view('home',[

@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0853ac78-eb1b-4ecf-b104-8a5af7afb17a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/js/components/registr.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/js/components/registr.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/Http/Controllers/Registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/views/layouts/headerMenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +152,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/server/OSPanel/domains/chspudop" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -272,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623077749551</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Делаю форму редактирования персональных данных v.1">
+      <created>1623164597136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623164597136</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,21 +288,22 @@
     <MESSAGE value="Пытаюсь передать данные из формы на бэкенд" />
     <MESSAGE value="Пытаюсь передать данные из формы на бэкенд v.1" />
     <MESSAGE value="Сделал возможность регистрации на сайте v.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал возможность регистрации на сайте v.1" />
+    <MESSAGE value="Делаю форму редактирования персональных данных v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Делаю форму редактирования персональных данных v.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622790123934">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622790123934" />
-    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1623077743648">
+    <state x="-1337" y="29" key="CommitChangelistDialog2" timestamp="1623164594536">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623077743648" />
-    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1622030044387">
+    <state x="-1337" y="29" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623164594536" />
+    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1623237256329">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1180" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1622030044387" />
+    <state x="-1180" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623237256329" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621973469262" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1621794838728">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -326,10 +329,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622832623996" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1623077751207">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1623164599743">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623077751207" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1623164599743" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621973505262" />
     <state x="-1253" y="253" width="627" height="568" key="find.popup" timestamp="1623057498760">
       <screen x="-1920" y="0" width="1920" height="1040" />
