@@ -13,8 +13,8 @@
         <div class="row m-0 my-3">
             <b>Добро пожаловать @if(!empty($ContentDom)) @foreach ($ContentDom as $val) {{$val['Name']." ".$val['Secondname']}} @endforeach  @endif </b>
         </div>
-        <form  method="POST" action="PersoneData" class="w-100">
-            @csrf
+        <form  method="POST" action="PersoneData" class="w-100" enctype = "multipart / form-data" >
+            {{ csrf_field() }}
         <div class="row my-3" >
             <div class="col-12 col-md-4">
                 <label for="surname">Фамилия:</label>
@@ -32,7 +32,7 @@
             <div class="row my-3" >
             <div class="col-12 col-md-4">
                 <label for="datemycreate">Дата рождения:</label>
-                <input id="datemycreate" name="datemycreate" class="form-control" value="{{$ContentDom["PersoneData"]["datemycreate"]}}">
+                <input id="datemycreate" type="date" name="datemycreate" class="form-control" value="{{$ContentDom["PersoneData"]["datemycreate"]}}">
             </div>
             <div class="col-12 col-md-4">
                 <label for="areas">Район:</label>
@@ -40,13 +40,24 @@
             </div>
             <div class="col-12 col-md-4">
             <label for="schools">Образовательная организация:</label>
-            <input id="schools" name="schools" class="form-control"  value="{{$ContentDom["schools"]["name"]}}">
+                <select class="form-control" id="schools" name="schools">
+                    <option value="0">Выберите школу</option>
+                    @foreach($ContentDom['PersoneData']["schools"] as $val)
+                         <option @if($ContentDom["PersoneData"]['schoolid']==$val['id']) selected="selected" @endif value="{{$val['id']}}">{{$val['name']}}</option>
+                        @endforeach
+
+                </select>
             </div>
         </div>
             <div class="row my-3" >
             <div class="col-12 col-md-4">
                 <label for="email">Email:</label>
                 <input id="email" name="email" class="form-control" value="{{$ContentDom["PersoneData"]["email"]}}">
+            </div>
+                <div class="row my-3" >
+            <div class="col-12 col-md-4">
+                <label for="file">Загрузить файл:</label>
+                <input id="file" type = "file" name = "file" class = "form-control" >
             </div>
             <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
             <input id="savedate" name="savedate" class="form-control btn btn-outline-primary"   type='submit' value="Сохранить изменения">

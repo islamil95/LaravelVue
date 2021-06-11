@@ -42,7 +42,7 @@ class HomeController extends Controller
 //             ],
              ],
         ];
-        dd($url_data);
+//        dd($url_data);
         return view('home',[
             'ContentDom'=>$url_data
         ]);
@@ -50,12 +50,15 @@ class HomeController extends Controller
 
     public function PersoneData(Request $request)
     {
+
          Auth::user()->surname=$request->surname;
          Auth::user()->name=$request->name;
          Auth::user()->secondname=$request->secondname;
          Auth::user()->email=$request->email;
          Auth::user()->datemycreate=$request->datemycreate;
          Auth::user()->schoolid=$request->schools;
+           $request->file('file')->store('img');
+//        Image::make($request->file)->save('/img/');
          Auth::user()->save();
          return redirect()->route('home');
     }
