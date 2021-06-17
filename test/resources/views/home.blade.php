@@ -13,8 +13,8 @@
         <div class="row m-0 my-3">
             <b>Добро пожаловать @if(!empty($ContentDom)) @foreach ($ContentDom as $val) {{$val['Name']." ".$val['Secondname']}} @endforeach  @endif </b>
         </div>
-        <form  method="POST" action="PersoneData" class="w-100" enctype = "multipart / form-data" >
-            {{ csrf_field() }}
+        <form  method="POST" action="PersoneData" class="w-100" enctype = "multipart/form-data" >
+            @csrf
         <div class="row my-3" >
             <div class="col-12 col-md-4">
                 <label for="surname">Фамилия:</label>
@@ -54,15 +54,23 @@
                 <label for="email">Email:</label>
                 <input id="email" name="email" class="form-control" value="{{$ContentDom["PersoneData"]["email"]}}">
             </div>
-                <div class="row my-3" >
-            <div class="col-12 col-md-4">
-                <label for="file">Загрузить файл:</label>
-                <input id="file" type = "file" name = "file" class = "form-control" >
-            </div>
-            <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
-            <input id="savedate" name="savedate" class="form-control btn btn-outline-primary"   type='submit' value="Сохранить изменения">
-            </div>
+                <div class="col-12 col-md-8">
+                    <label for="file">Загрузить файл:</label>
+                    <input id="file" type = "file"    name = "userfile" multiple class = "form-control" style="padding: 3px;  height: auto;">
+                </div>
         </div>
+            <div class="row my-3" >
+                <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
+                    <input id="savedate" name="savedate" class="form-control btn btn-outline-primary "   type='submit' value="Сохранить изменения">
+                </div>
+            </div>
         </form>
+        <div class="row m-0 my-3">
+             @if($ContentDom["PersoneData"]["files"])
+                @foreach($ContentDom["PersoneData"]["files"] as $items)
+                    <img download src="/storage/app/public/img/{{$ContentDom["PersoneData"]["id"]}}/{{$items->hash}}" alt="{{$items->name}}">
+                    @endforeach
+            @endif
+        </div>
     </div>
 @endsection
