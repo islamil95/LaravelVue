@@ -68,7 +68,8 @@
         <div class="row m-0 my-3">
              @if($ContentDom["PersoneData"]["files"])
                 @foreach($ContentDom["PersoneData"]["files"] as $items)
-                    <img download src="/storage/app/public/img/{{$ContentDom["PersoneData"]["id"]}}/{{$items->hash}}" alt="{{$items->name}}">
+                   <img src="{{asset('/storage/img/'.$ContentDom["PersoneData"]["id"].'/'.$items->hash)}}" alt="{{$items->name}}">
+{{--                    <a download="{{$items->name}}" href="{{asset('/storage/img/'.$ContentDom["PersoneData"]["id"].'/'.$items->hash)}}" alt="{{$items->name}}">{{$items->name}}</a>--}}
                     @endforeach
             @endif
         </div>
