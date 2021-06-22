@@ -21,3 +21,4 @@ Route::get('/register', [App\Http\Controllers\Registration::class, 'show'])->nam
 Route::post('/register', [App\Http\Controllers\Registration::class, 'ValidateRequest'])->name('registerv');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/PersoneData', [App\Http\Controllers\HomeController::class, 'PersoneData'])->name('PersoneData');
+Route::post('/deletepersonefile',[App\Http\Controllers\HomeController::class,'deletePersoneFile'])->name('deletepersonefile');

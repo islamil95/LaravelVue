@@ -56,24 +56,47 @@ class HomeController extends Controller
 
     public function PersoneData(Request $request)
     {
-
          Auth::user()->surname=$request->surname;
          Auth::user()->name=$request->name;
          Auth::user()->secondname=$request->secondname;
          Auth::user()->email=$request->email;
          Auth::user()->datemycreate=$request->datemycreate;
          Auth::user()->schoolid=$request->schools;
-        $localfiledata=$request->file('userfile');
-  $path = Storage::put('public/img/'.Auth::user()->id, $localfiledata);
- if(!$path){
-     return response()->json(['error' => 'Проблема в загрузке файла'], 401);
- }
-     DB::table('personedatafiles')->insert([
-         'name'=>$request->file('userfile')->getClientOriginalName(),
-         'hash'=>$localfiledata->hashName(),
-     ]);
+//        $localfiledata=$request->file('userfile');
+        foreach($request->file('userfile') as $index => $file){
+            $path = Storage::put('public/img/'.Auth::user()->id, $file);
+            if(!$path){
+                return response()->json(['error' => 'Проблема в загрузке файла'], 401);
+            }
+            DB::table('personedatafiles')->insert([
+                'name'=>$file->getClientOriginalName(),
+                'hash'=>$file->hashName(),
+                'ext'=>$file->getClientOriginalExtension(),
+            ]);
+        }
+
     Auth::user()->save();
      return redirect()->route('home');
+    }
+
+    public function deletePersoneFile(Request $request)
+    {
+       $deletefileBD= DB::table('personedatafiles')->where('id', $request->id)->first();
+        DB::beginTransaction();
+        try {
+              if(DB::table('personedatafiles')->delete($request->id)){
+                  if(Storage::delete('public/img/'.Auth::id().'/'.$deletefileBD->hash)){
+                      DB::commit();
+                  }else{
+                      DB::rollback();
+                  }
+              }
+            // all good
+        } catch (\Exception $e) {
+            DB::rollback();
+            // something went wrong
+        }
+      return redirect()->route('home');
     }
 }
 
