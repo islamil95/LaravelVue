@@ -63,18 +63,19 @@ class HomeController extends Controller
          Auth::user()->datemycreate=$request->datemycreate;
          Auth::user()->schoolid=$request->schools;
 //        $localfiledata=$request->file('userfile');
-        foreach($request->file('userfile') as $index => $file){
-            $path = Storage::put('public/img/'.Auth::user()->id, $file);
-            if(!$path){
-                return response()->json(['error' => 'Проблема в загрузке файла'], 401);
+        if($request->file('userfile')){
+            foreach($request->file('userfile') as $index => $file){
+                $path = Storage::put('public/img/'.Auth::user()->id, $file);
+                if(!$path){
+                    return response()->json(['error' => 'Проблема в загрузке файла'], 401);
+                }
+                DB::table('personedatafiles')->insert([
+                    'name'=>$file->getClientOriginalName(),
+                    'hash'=>$file->hashName(),
+                    'ext'=>$file->getClientOriginalExtension(),
+                ]);
             }
-            DB::table('personedatafiles')->insert([
-                'name'=>$file->getClientOriginalName(),
-                'hash'=>$file->hashName(),
-                'ext'=>$file->getClientOriginalExtension(),
-            ]);
         }
-
     Auth::user()->save();
      return redirect()->route('home');
     }

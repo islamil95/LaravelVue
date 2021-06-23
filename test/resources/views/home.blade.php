@@ -75,6 +75,8 @@
                 <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
                     <input id="savedate" name="savedate" class="form-control btn btn-outline-primary " type='submit'
                            value="Сохранить изменения">
+
+                    <pdfpersonedata></pdfpersonedata>
                 </div>
             </div>
         </form>
@@ -103,7 +105,7 @@
 
                                     </a>
                                 </div>
-                                <button type="submit" name="id"  value="{{$items->id}}" class="form-control btn btn-outline-danger btn-sm">Удалить</button>
+                                <button type="button" name="id" id="saveeditdata" value="{{$items->id}}" class="form-control btn btn-outline-danger btn-sm">Удалить</button>
                             </div>
                             {{--                    <a download="{{$items->name}}" href="{{asset('/storage/img/'.$ContentDom["PersoneData"]["id"].'/'.$items->hash)}}" alt="{{$items->name}}">{{$items->name}}</a>--}}
                         @endforeach
@@ -111,6 +113,5 @@
                 </form>
             @endif
         </div>
-
     </div>
 @endsection
