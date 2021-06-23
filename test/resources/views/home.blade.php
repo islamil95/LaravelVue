@@ -17,16 +17,14 @@
     @extends('layouts.headerMenu')
     <div class="container">
         <div class="row m-0 my-3">
-            <b>Добро
-                пожаловать @if(!empty($ContentDom)) @foreach ($ContentDom as $val) {{$val['Name']." ".$val['Secondname']}} @endforeach  @endif </b>
+            <b>Добро пожаловать @if(!empty($ContentDom)) @foreach ($ContentDom as $val) {{$val['Name']." ".$val['Secondname']}} @endforeach  @endif </b>
         </div>
         <form method="POST" action="PersoneData" class="w-100" enctype="multipart/form-data">
             @csrf
             <div class="row my-3">
                 <div class="col-12 col-md-4">
                     <label for="surname">Фамилия:</label>
-                    <input id="surname" name="surname" class="form-control"
-                           value="{{$ContentDom["PersoneData"]["Surname"]}}">
+                    <input id="surname" name="surname" class="form-control" value="{{$ContentDom["PersoneData"]["Surname"]}}">
                 </div>
                 <div class="col-12 col-md-4">
                     <label for="name">Имя:</label>
@@ -34,8 +32,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <label for="secondname">Отчество:</label>
-                    <input id="secondname" name="secondname" class="form-control"
-                           value="{{$ContentDom["PersoneData"]["Secondname"]}}">
+                    <input id="secondname" name="secondname" class="form-control" value="{{$ContentDom["PersoneData"]["Secondname"]}}">
                 </div>
             </div>
             <div class="row my-3">
@@ -56,7 +53,6 @@
                             <option @if($ContentDom["PersoneData"]['schoolid']==$val['id']) selected="selected"
                                     @endif value="{{$val['id']}}">{{$val['name']}}</option>
                         @endforeach
-
                     </select>
                 </div>
             </div>
@@ -76,12 +72,16 @@
                     <input id="savedate" name="savedate" class="form-control btn btn-outline-primary " type='submit'
                            value="Сохранить изменения">
 
-                    <pdfpersonedata></pdfpersonedata>
+{{--                    <pdfpersonedata></pdfpersonedata>--}}
+
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
+                    <a  class="form-control btn btn-outline-primary mx-2"  href="/test"  >Пройти тестирование</a>
                 </div>
             </div>
         </form>
         <div class="row m-0 my-3 w-100 ">
-            @if($ContentDom["PersoneData"]["files"])
+            @if(!empty($ContentDom["PersoneData"]["files"]))
                 <div class="row px-3 py-2 ">
                     <h3 class="border-bottom pb-2">Загруженные файлы:</h3>
                 </div>

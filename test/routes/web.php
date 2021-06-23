@@ -21,5 +21,6 @@ Route::post('/register', [App\Http\Controllers\Registration::class, 'ValidateReq
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/PersoneData', [App\Http\Controllers\HomeController::class, 'PersoneData'])->name('PersoneData');
 Route::post('/deletepersonefile',[App\Http\Controllers\HomeController::class,'deletePersoneFile'])->name('deletepersonefile');
-Route::get('pdf/preview', [App\Http\Controllers\PDFController::class, 'preview'])->name('pdf.preview');
-Route::get('pdf/generate', [App\Http\Controllers\PDFController::class, 'generatePDF'])->name('pdf.generate');
+//Route::get('pdf/preview', [App\Http\Controllers\PDFController::class, 'preview'])->name('pdf.preview');
+Route::get('pdf/generate/personedata', [App\Http\Controllers\PDFController::class, 'generatePDF'])->name('pdf.generate');
+Route::get('/test', [App\Http\Controllers\TestController::class, 'show'])->name('test');

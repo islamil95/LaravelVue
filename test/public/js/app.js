@@ -1939,24 +1939,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "pdfpersonedata",
   data: function data() {
@@ -1965,8 +1947,24 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    modalrec: function modalrec() {
-      $('#exampleModal').modal('toggle');
+    pdfgeneration: function pdfgeneration() {
+      var _this = this;
+
+      axios.get('/pdf/generate/personedata').then(function (response) {
+        console.log(response);
+        location.href = '/home';
+      })["catch"](function (e) {
+        console.log(e);
+
+        if (e.response.status == 422) {
+          // this.errors.push(e.response.data.errors);
+          _this.errors.push(e.response.data.errors);
+        } else {
+          console.log(e);
+
+          _this.errors.push("Неизвестная ошибка. Обратитесь к администратору");
+        }
+      });
     }
   }
 });
@@ -38051,90 +38049,27 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "conainer" }, [
-    _c("input", {
-      staticClass: "form-control btn btn-outline-primary mx-2",
-      attrs: {
-        name: "generatepdf",
-        type: "button",
-        value: "Сгенерировать PDF"
-      },
-      on: { click: _vm.modalrec }
-    }),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade  ",
-        attrs: {
-          id: "exampleModal",
-          tabindex: "-1",
-          "aria-labelledby": "exampleModalLabel",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _vm.errors.length
-                ? _c(
-                    "ul",
-                    _vm._l(_vm.errors, function(error) {
-                      return _c("li", [_vm._v(_vm._s(error))])
-                    }),
-                    0
-                  )
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _vm._m(1)
-          ])
-        ])
-      ]
-    )
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
+    return _c("div", { staticClass: "conainer" }, [
       _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "exampleModalLabel" } },
-        [_vm._v("Ошибка")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "close",
-          attrs: {
-            type: "button",
-            "data-dismiss": "modal",
-            "aria-label": "Close"
-          }
-        },
-        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-footer" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-secondary",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("Закрыть")]
+        "form",
+        { attrs: { action: "/pdf/generate/personedata", method: "get" } },
+        [
+          _c("input", {
+            staticClass: "form-control btn btn-outline-primary mx-2",
+            attrs: {
+              name: "generatepdf",
+              type: "submit",
+              value: "Сгенерировать PDF"
+            }
+          })
+        ]
       )
     ])
   }
