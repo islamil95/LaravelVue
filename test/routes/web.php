@@ -23,4 +23,6 @@ Route::post('/PersoneData', [App\Http\Controllers\HomeController::class, 'Person
 Route::post('/deletepersonefile',[App\Http\Controllers\HomeController::class,'deletePersoneFile'])->name('deletepersonefile');
 //Route::get('pdf/preview', [App\Http\Controllers\PDFController::class, 'preview'])->name('pdf.preview');
 Route::get('pdf/generate/personedata', [App\Http\Controllers\PDFController::class, 'generatePDF'])->name('pdf.generate');
+Route::get('/test/get', [App\Http\Controllers\TestController::class, 'get'])->name('testget');
 Route::get('/test', [App\Http\Controllers\TestController::class, 'show'])->name('test');
+Route::get('/test/instruction', [App\Http\Controllers\TestController::class, 'instruction'])->name('testinstruction');

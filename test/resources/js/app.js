@@ -23,6 +23,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('prop-component', require('./components/PropComponent.vue').default);
 Vue.component('registr', require('./components/registr.vue').default);
 Vue.component('pdfpersonedata', require('./components/pdfpersonedata.vue').default);
+Vue.component('test', require('./components/test.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

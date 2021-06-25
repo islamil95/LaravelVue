@@ -76,7 +76,7 @@
 
                 </div>
                 <div class="col-12 col-md-4 d-flex align-items-end my-5 m-md-0">
-                    <a  class="form-control btn btn-outline-primary mx-2"  href="/test"  >Пройти тестирование</a>
+                    <a  class="form-control btn btn-outline-primary mx-2"  href="/test/instruction"  >Пройти тестирование</a>
                 </div>
             </div>
         </form>
